@@ -14,10 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        print("view Will Appear")
+    @IBAction func buttonClicked(_ sender: UIButton) {
     }
-
+    
 
 }
 

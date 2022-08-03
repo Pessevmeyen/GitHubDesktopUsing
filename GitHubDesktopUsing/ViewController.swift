@@ -16,11 +16,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+   
     }
     
     @IBAction func buttonClicked(_ sender: UIButton) {
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSecondViewController" {
+            let vc = segue.destination as? SecondViewController
+            vc?.navigationController?.popToRootViewController(animated: true)
+            
+        }
+    }
+    override func performSegue(withIdentifier identifier: String, sender: Any?) {
+        
+    }
 
 }
 

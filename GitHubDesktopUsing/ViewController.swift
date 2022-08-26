@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBAction func buttonClicked(_ sender: UIButton) {
     }
     
-
+    //bi şeyler yapıldı
+    print("naber")
 }
 
